@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    #3rd party 
+    'rest_framework',
+
+    #local
     'users.apps.UsersConfig',
 ]
 
@@ -51,6 +56,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'liverfurnish.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+]
+}
 
 TEMPLATES = [
     {
