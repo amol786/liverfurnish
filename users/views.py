@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login,authenticate,logout
-from users.forms import RegistrationForm
+from users.forms import RegistrationForm, AccountAuthenticationForm
+from users.models import Account
 # Create your views here.
 
 def home_screen_view(request):
